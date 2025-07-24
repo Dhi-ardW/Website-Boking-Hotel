@@ -1,0 +1,82 @@
+:root {
+  --primery: #90d1ca;
+  --secondry: #129990;
+  --thirdy: #096b68;
+  --putih: #fffbde;
+  --hitam: #00343f;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--putih);
+}
+
+#Logo {
+  transform: translateY(0);
+  transition: 0.3s ease;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+}
+
+#Logo h1 {
+  color: var(--primery);
+}
+
+#Logo:active {
+  transform: translateY(10px);
+}
+
+img {
+  width: 50px;
+}
+
+#nav-link a {
+  color: var(--putih);
+  position: relative;
+  transform: scale(0px);
+  transition: 0.3s ease-out;
+}
+
+#nav-link a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primery);
+  visibility: hidden;
+  transform: translateX(50%);
+  right: 50%;
+  transition: 0.3s ease;
+}
+
+#nav-link a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+#nav-link a:hover {
+  transform: scale(110%);
+  color: var(--primery);
+}
+
+.btn-outline-primery {
+  color: var(--primery);
+  outline: 1px solid var(--primery);
+  transition: 0.3s ease;
+}
+
+.btn-outline-primery:hover {
+  color: var(--secondry);
+  outline: 1px solid var(--secondry);
+}
+
+.btn-primery {
+  background-color: var(--primery);
+  color: var(--putih);
+  transition: 0.3s ease;
+}
+
+.btn-primery:hover {
+  background-color: var(--secondry);
+}
