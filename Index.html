@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nginapin</title>
+    <!-- link image icon -->
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +15,10 @@
     <!-- link AOS-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- link icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
     <!-- link bootsstarp -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -23,32 +29,296 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="container-fluid bg-dark fixed">
-      <div class="d-flex justify-content-around py-2">
-        <a
-          href="#"
-          class="d-flex align-items-center p-1 text-decoration-none"
-          id="Logo">
-          <img src="img/logo.png" alt="" class="me-2 img" />
-          <h1 class="fs-2">Nginap<span class="text-light">in</span></h1>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand bg-third-75 text-putih py-2 fixed-top shadow-lg"
+      style="z-index: 999">
+      <div
+        class="container-lg px-3 container-fluid d-flex align-items-lg-center justify-content-between">
+        <a href="#" class="d-flex align-items-center text-decoration-none">
+          <img src="/img/logo.png" width="60" height="60" alt="logo" />
+          <h1 class="rowdies fs-4 text-putih ms-1">
+            Ngina<span class="text-primere">Pin</span>
+          </h1>
         </a>
-        <div class="d-flex gap-4 align-items-center" id="nav-link">
-          <a href="#" class="text-decoration-none">Home</a>
-          <a href="#about" class="text-decoration-none">About</a>
-          <a href="#service" class="text-decoration-none">Service</a>
-          <a href="#room" class="text-decoration-none">Room</a>
-          <a href="contact.html" class="text-decoration-none">Contact</a>
-          <div class="btn-grup d-flex gap-2">
-            <button type="button" id="login" class="btn btn-outline-primery">
+        <div class="d-none d-lg-flex">
+          <ul class="navbar-nav fs-6 gap-2 me-3 rubik">
+            <li class="nav-item py-0">
+              <a
+                class="nav-link text-putih nav-decoration active"
+                aria-current="page"
+                href="#"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-putih nav-decoration" href="#tentang"
+                >Tentang</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-putih nav-decoration" href="#layanan"
+                >Layanan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-putih nav-decoration" href="#ruangan"
+                >Ruangan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-putih nav-decoration" href="#kontak"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex gap-2 rubik">
+            <button
+              class="btn btn-outline-primere fs-6 shadow-sm"
+              type="button">
               Login
             </button>
-            <button type="button" id="register" class="btn btn-primery">
+            <button class="btn btn-primere fs-6 shadow-sm" type="button">
               Register
             </button>
+          </form>
+        </div>
+        <!-- Tombol -->
+        <div class="d-flex gap-3 d-block d-lg-none">
+          <form class="d-flex gap-3 rubik">
+            <span class="fs-6 hover-putih align-items-center d-flex">
+              Login
+            </span>
+          </form>
+          <div class="d-block">
+            <span
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <i class="bi bi-list fs-0-1 pointer hover-putih"></i>
+            </span>
           </div>
         </div>
       </div>
     </nav>
+    <!-- Offcanvas -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel">
+      <div
+        class="offcanvas-header bg-third d-flex align-items-start justify-content-between pt-3 pb-1">
+        <h5 id="offcanvasRightLabel">
+          <a href="#" class="d-flex align-items-center text-decoration-none">
+            <img src="/img/logo.png" width="50" height="50" alt="logo" />
+            <h1 class="rowdies fs-4 text-putih ms-1">
+              Ngina<span class="text-primere">Pin</span>
+            </h1>
+          </a>
+        </h5>
+        <i
+          class="bi bi-x fs-1 pointer hover-putih"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"></i>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav fs-4 rubik pb-2">
+          <li class="nav-item">
+            <a class="nav-link text-third bg-hover-third" href="#">Beranda</a>
+          </li>
+          <hr />
+          <li class="nav-item">
+            <a class="nav-link text-third bg-hover-third" href="#">Tentang</a>
+          </li>
+          <hr />
+          <li class="nav-item">
+            <a class="nav-link text-third bg-hover-third" href="#">Layanan</a>
+          </li>
+          <hr />
+          <li class="nav-item">
+            <a class="nav-link text-third bg-hover-third" href="#">Ruangan</a>
+          </li>
+          <hr />
+          <li class="nav-item">
+            <a class="nav-link text-third bg-hover-third" href="#">Kontak</a>
+          </li>
+          <hr />
+          <li class="nav-item">
+            <span
+              class="nav-link text-third bg-hover-third align-items-center d-flex">
+              Register
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar end  -->
+
+    <!-- section hero/home -->
+    <div
+      class="container-full background gradient justify-content-center align-items-center d-flex">
+      <div class="container-fluid container-lg d-flex align-items-center">
+        <div
+          class="description w-100 d-flex flex-column align-items-xl-start align-items-center text-center text-xl-start">
+          <h1 class="fs-64 text-putih rubik fw-bold text-shadow">
+            Booking <span class="text-primere">Hotel </span>Jadi
+            <span class="text-primere">Gampang</span>, Kayak Lagi Liburan Terus
+          </h1>
+          <p
+            class="text-putih fs-20 rubik text-shadow my-3 raleway mt-3 mt-xl-1">
+            kamu cari penginapan tanpa ribet dan tanpa drama. Mau staycation
+            dadakan, liburan bareng keluarga, atau solo trip hemat, semuanya
+            bisa kamu temukan di sini.
+          </p>
+          <p class="text-putih rubik fs-20 text-shadow mb-4 raleway">
+            Tinggal cari, klik, langsung nginap. Gak perlu ribet bandingin harga
+            ke sana-sini.
+          </p>
+          <a
+            href="#ruangan"
+            class="d-flex align-items-center text-decoration-none mt-3 mt-xl-1">
+            <button
+              class="btn btn-primere fs-25 rubik shadow me-3"
+              type="button">
+              Pesan Sekarang
+            </button>
+            <button
+              class="btn btn-primere fs-25 rubik shadow me-3 d-block d-xl-none"
+              type="button">
+              Cari Ruangan
+            </button>
+            <i
+              class="bi bi-chevron-right fs-50 text-primere d-none d-xl-block"></i>
+          </a>
+        </div>
+        <div
+          class="gambar w-25 flex-column gap-5 align-items-center justify-content-center d-none d-xl-flex">
+          <img
+            src="/img/fasilitas1.jpg"
+            alt=""
+            width="140"
+            height="140"
+            class="rounded-circle border-primere shadow" />
+          <img
+            src="/img/gedung3.jpg"
+            alt=""
+            width="140"
+            height="140"
+            class="rounded-circle border-primere shadow" />
+          <img
+            src="/img/background3.jpg"
+            alt=""
+            width="140"
+            height="140"
+            class="rounded-circle border-primere shadow" />
+        </div>
+      </div>
+    </div>
+    <!-- section hero/home end -->
+
+    <!-- section about -->
+    <div
+      class="container-full2 container-xl d-flex flex-column align-items-center justify-content-xl-end justify-content-center position-relative">
+      <div
+        class="row justify-content-center gap-5 position-absolute top--3 d-none d-xl-flex">
+        <div class="col-3 bg-white pt-3 pe-3 ps-3 pb-0 rounded-3 shadow-lg">
+          <img src="/img/gedung1.jpg" class="h-50 w-100" alt="gedung1" />
+          <h1 class="fs-32 rowdies mt-3">Hotel Mutiara</h1>
+          <p class="fs-6 mb-0">
+            penginapan nyaman dengan bangunan khas berwarna oranye yang mencolok
+            dan mudah dikenali. Dikelilingi suasana asri dan pepohonan hijau,
+            hotel ini menawarkan ketenangan bagi para tamu yang ingin bersantai.
+          </p>
+        </div>
+        <div class="col-3 bg-white pt-3 pe-3 ps-3 pb-0 rounded-3 shadow-lg">
+          <img src="/img/gedung2.jpg" class="h-50 w-100" alt="gedung2" />
+          <h1 class="fs-32 rowdies mt-3">Hotel Orchardz</h1>
+          <p class="fs-6 mb-0">
+            penginapan nyaman dengan bangunan khas berwarna oranye yang mencolok
+            dan mudah dikenali. Dikelilingi suasana asri dan pepohonan hijau,
+            hotel ini menawarkan ketenangan bagi para tamu yang ingin bersantai.
+          </p>
+        </div>
+        <div class="col-3 bg-white pt-3 pe-3 ps-3 pb-0 rounded-3 shadow-lg">
+          <img src="/img/gedung3.jpg" class="h-50 w-100" alt="gedung3" />
+          <h1 class="fs-32 rowdies mt-3">Hotel Mutiara</h1>
+          <p class="fs-6 mb-0">
+            penginapan nyaman dengan bangunan khas berwarna oranye yang mencolok
+            dan mudah dikenali. Dikelilingi suasana asri dan pepohonan hijau,
+            hotel ini menawarkan ketenangan bagi para tamu yang ingin bersantai.
+          </p>
+        </div>
+      </div>
+      <div class="d-flex flex-xl-row flex-column w-100 align-items-center">
+        <img src="/img/logo2.png" alt="logo2" class="w40" />
+        <div class="w50 text-center">
+          <h1 class="rubik">TENTANG</h1>
+          <p class="raleway text-justify">
+            Nginapin.co.id adalah teman setia kamu buat cari penginapan nyaman
+            tanpa ribet. Dari hotel mewah sampai homestay yang adem dan
+            bersahaja, semua bisa kamu temukan cuma dalam beberapa klik.
+            Antarmukanya simpel, proses booking-nya cepat, dan nggak bikin
+            pusing. Mau staycation dadakan atau liburan panjang, cukup buka
+            nginapin.co.id, pilih tempatnya, klik, beres! Tinggal nginap, nggak
+            pake drama
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- section about end -->
+
+    <!-- section layanan -->
+    <div
+      class="container-full bg-third text-center align-items-center justify-content-start pt-100 fs-64">
+      <h1 class="rubik text-putih text-shadow">LAYANAN</h1>
+      <div
+        class="container-fluid container-lg-container align-items-center justify-content-start d-flex flex-column justify-content-center">
+        <div
+          class="d-flex w-75 mt-100 align-items-center justify-content-start text-start">
+          <div
+            class="lingkaran shadow-lg h-20 d-flex align-items-center justify-content-center bg-primere rounded-circle p-3 me-4">
+            <i class="bi bi-house-door text-putih"></i>
+          </div>
+          <div class="text-start">
+            <h1 class="fs-32 rubik text-primere">Hotel berkualitas tinggi</h1>
+            <p class="text-putih raleway fs-16">
+              Nginapin Sudah berkerja sama dengan hotel - hotel ternama yang
+              sudah terjamin kualitasnya
+            </p>
+          </div>
+        </div>
+        <div
+          class="d-flex w-75 mt-35 align-items-center justify-content-end text-start">
+          <div class="text-end">
+            <h1 class="fs-32 rubik text-primere">Hotel berkualitas tinggi</h1>
+            <p class="text-putih raleway fs-16">
+              Nginapin Sudah berkerja sama dengan hotel - hotel ternama yang
+              sudah terjamin kualitasnya
+            </p>
+          </div>
+          <div
+            class="lingkaran shadow-lg h-20 d-flex align-items-center justify-content-center bg-primere rounded-circle p-3 ms-4">
+            <i class="bi bi-house-door text-putih"></i>
+          </div>
+        </div>
+        <div
+          class="d-flex w-75 mt-35 align-items-center justify-content-start text-start">
+          <div
+            class="lingkaran shadow-lg h-20 d-flex align-items-center justify-content-center bg-primere rounded-circle p-3 me-4">
+            <i class="bi bi-house-door text-putih"></i>
+          </div>
+          <div class="text-start">
+            <h1 class="fs-32 rubik text-primere">Hotel berkualitas tinggi</h1>
+            <p class="text-putih raleway fs-16">
+              Nginapin Sudah berkerja sama dengan hotel - hotel ternama yang
+              sudah terjamin kualitasnya
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section layanan end -->
 
     <!-- script js -->
     <script src="script.js"></script>

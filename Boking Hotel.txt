@@ -2,3 +2,4 @@ premiere = 90D1CA
 secondary = 129990
 thirdy = 096B68
 Putih = FFFBDE
+Hitam = 00343f
