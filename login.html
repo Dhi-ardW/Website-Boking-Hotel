@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nginapin</title>
+    <!-- link image icon -->
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet" />
+    <!-- link AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- link icon bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <!-- link bootsstarp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous" />
+    <!-- link style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand bg-third-75 text-putih py-2 fixed-top shadow-lg"
+      style="z-index: 999">
+      <div
+        class="container-lg px-3 container-fluid d-flex align-items-lg-center justify-content-between">
+        <a href="#" class="d-flex align-items-center text-decoration-none">
+          <img src="/img/logo.png" width="60" height="60" alt="logo" />
+          <h1 class="rowdies fs-4 text-putih ms-1">
+            Ngina<span class="text-primere">Pin</span>
+          </h1>
+        </a>
+        <div class="d-none d-lg-flex">
+          <ul class="navbar-nav fs-6 gap-2 me-3 rubik">
+            <li class="nav-item py-0">
+              <a
+                class="nav-link text-putih nav-decoration active"
+                aria-current="page"
+                href="#"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-putih nav-decoration" href="#tentang"
+                >Tentang</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-putih nav-decoration" href="#layanan"
+                >Layanan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-putih nav-decoration" href="#ruangan"
+                >Ruangan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-putih nav-decoration" href="#kontak"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex gap-2 rubik">
+            <a
+              href="login.html"
+              class="btn btn-outline-primere fs-6 shadow-sm"
+              type="button">
+              Login
+            </a>
+            <a
+              href="login.html"
+              class="btn btn-primere fs-6 shadow-sm"
+              type="button">
+              Register
+            </a>
+          </form>
+        </div>
+        <!-- Tombol -->
+        <div class="d-flex gap-3 d-block d-lg-none">
+          <form class="d-flex gap-3 rubik">
+            <span class="fs-6 hover-putih align-items-center d-flex">
+              Login
+            </span>
+          </form>
+          <div class="d-block">
+            <span
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <i class="bi bi-list fs-32 pointer hover-putih"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="container-fluid background-login justify-content-center align-items-center d-flex">
+      <div class="w-50 bg-putih rounded-3 px-2 py-4">
+        <h1 class="fs-1 rubik text-third text-center text-uppercase mt-3">
+          Forum Login
+        </h1>
+        <div class="form w-100">
+          <div class="d-flex">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Masukan Username Anda "
+              autocomplete="off"
+              class="text-third" />
+          </div>
+          <div class="d-flex">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Masukan password  "
+              autocomplete="off"
+              class="text-third" />
+          </div>
+          <button type="submit" class="btn raleway px-3 py-2">
+            Kirim Pesan
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- script js -->
+    <script src="script.js"></script>
+    <!-- script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+    <!-- link AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
