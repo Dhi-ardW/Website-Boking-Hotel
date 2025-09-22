@@ -35,7 +35,9 @@
       style="z-index: 999">
       <div
         class="container-lg px-3 container-fluid d-flex align-items-lg-center justify-content-between">
-        <a href="Index.html" class="d-flex align-items-center text-decoration-none">
+        <a
+          href="Index.html"
+          class="d-flex align-items-center text-decoration-none">
           <img src="/img/logo.png" width="60" height="60" alt="logo" />
           <h1 class="rowdies fs-4 text-putih ms-1">
             Ngina<span class="text-primere">Pin</span>
@@ -45,30 +47,29 @@
           <ul class="navbar-nav fs-6 gap-2 me-3 rubik">
             <li class="nav-item py-0">
               <a
-                class="nav-link text-putih nav-decoration "
+                class="nav-link text-putih nav-decoration"
                 aria-current="page"
                 href="Index.html"
                 >Beranda</a
               >
             </li>
-            
-            </li>
           </ul>
           <form class="d-flex gap-2 rubik">
-            
             <a
-              href="register.html"
-              class="btn btn-primere fs-6 shadow-sm"
+              href="login.html"
+              class="btn btn-outline-primere fs-6 shadow-sm"
               type="button">
-              Register
+              Login
             </a>
           </form>
         </div>
         <!-- Tombol -->
         <div class="d-flex gap-3 d-block d-lg-none">
           <form class="d-flex gap-3 rubik">
-            <a href="register.html" class="text-decoration-none fs-6 hover-putih align-items-center d-flex">
-              Register
+            <a
+              href="login.html"
+              class="text-decoration-none fs-6 hover-putih align-items-center d-flex">
+              Login
             </a>
           </form>
           <div class="d-block">
@@ -90,7 +91,7 @@
       <div
         class="offcanvas-header bg-third d-flex align-items-start justify-content-between pt-3 pb-1">
         <h5 id="offcanvasRightLabel">
-          <a href="Index.html" class="d-flex align-items-center text-decoration-none">
+          <a href="#" class="d-flex align-items-center text-decoration-none">
             <img src="/img/logo.png" width="50" height="50" alt="logo" />
             <h1 class="rowdies fs-4 text-putih ms-1">
               Ngina<span class="text-primere">Pin</span>
@@ -123,13 +124,11 @@
           <li class="nav-item">
             <a class="nav-link text-third bg-hover-third" href="#">Kontak</a>
           </li>
-          
-          
         </ul>
       </div>
     </div>
     <!-- navbar end -->
-     <!-- form login -->
+    <!-- form login -->
     <div
       class="container-fluid background-login justify-content-center justify-content-lg-start align-items-center d-flex">
       <div
@@ -137,103 +136,165 @@
         <img src="/img/logo.png" alt="" width="400" height="400" />
       </div>
       <div class="auth bg-putih rounded-3 px-5 py-4">
-        <h1 class="fs-1 rubik text-third text-center text-uppercase mb-4">
-          Forum Login
+        <h1 class="fs-2 rubik text-third text-center text-uppercase mb-4">
+          Formulir Pesanan
         </h1>
         <div class="form w-100 mt-5">
+          <div class="d-flex input-auth-bar align-items-center">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukan email anda "
+              autocomplete="off"
+              class="text-third input-auth" />
+            <i class="bi bi-envelope-at eye-icon"></i>
+          </div>
           <div class="d-flex input-auth-bar align-items-center">
             <input
               type="text"
               id="username"
               name="username"
-              placeholder="Masukan Username Anda  "
+              placeholder="Masukan Nama anda  "
               autocomplete="off"
               class="text-third input-auth" />
-            <i class="bi bi-person-check-fill eye-icon"></i>
+            <i class="bi bi-person-fill-add eye-icon"></i>
           </div>
           <div class="d-flex align-items-center input-auth-bar">
             <input
               type="password"
               id="password"
               name="password"
-              placeholder="Masukan password  "
+              placeholder="masukan password anda  "
               autocomplete="off"
               class="text-third input-auth" />
             <div class="eye-btn" id="eye">
               <i class="bi bi-eye-fill eye-icon" id="eyes"></i>
             </div>
           </div>
-          <div class="d-flex justify-content-between align-items-center mt-5">
-            <button type="submit" class="btn-auth rubik">Masuk</button>
-            <a href="" class="text-decoration-none text-third hover-u"
-              >Belum Punya akun?</a
-            >
+          <div class="d-flex align-items-center gap-5">
+            <div class="d-flex flex-column align-items-start w-50 gap-2">
+              <label for="checkin">Tanggal Check-in</label>
+              <input
+                type="date"
+                id="checkin"
+                name="checkin"
+                autocomplete="off"
+                class="text-third input-auth-check" />
+            </div>
+            <div class="d-flex flex-column align-items-start w-50 gap-2">
+              <label for="checkout">Tanggal Check-out</label>
+              <input
+                type="date"
+                id="checkout"
+                name="checkout"
+                autocomplete="off"
+                class="text-third input-auth-check" />
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center mt-5">
+            <button type="submit" class="btn-auth rubik py-2">
+              Pesan Sekarang
+            </button>
           </div>
         </div>
       </div>
     </div>
     <!-- form login end -->
-     <!-- footer -->
-      <div
+    <!-- footer -->
+    <div
       class="w-100 pb-3 d-flex justify-content-center bg-third align-items-start">
       <div
-        class="w-75  d-flex pt-4 pt-xl-5 flex-column align-items-center justify-content-center text-start">
-        <h1 class="fs-32 rubik fw-bold text-putih text-capitalize ">
+        class="w-75 d-flex pt-4 pt-xl-5 flex-column align-items-center justify-content-center text-start">
+        <h1 class="fs-32 rubik fw-bold text-putih text-capitalize">
           Nginaping.co.id sudah berkerja sama dengan hotel - hotel ternama di
           indonesia dan sudah terpercaya berkualitas pelayanannya hotel
         </h1>
-        <hr style="height: 3px ; width: 100%; background-color: white;"/>
-        <div class="w-100 row justify-content-start align-items-center flex-column flex-md-row my-3">
-          <div class="col-lg-4 col-md-6  col-12  text-start text-putih">
+        <hr style="height: 3px; width: 100%; background-color: white" />
+        <div
+          class="w-100 row justify-content-start align-items-center flex-column flex-md-row my-3">
+          <div class="col-lg-4 col-md-6 col-12 text-start text-putih">
             <h5 class="rubik fs-20 fw-bold">Alamat Dan Kontak</h5>
 
             <div class="d-flex align-items-center justify-content-start mt-1">
-              <i class="bi bi-pin-map-fill "></i>
-              <span class="ms-3 raleway fs-14 text-putih">Alamat :  <a href="" class="text-decoration-u text-putih">Jalan, Sudirman no.4 Jawa Tengah</a></span>
+              <i class="bi bi-pin-map-fill"></i>
+              <span class="ms-3 raleway fs-14 text-putih"
+                >Alamat :
+                <a href="" class="text-decoration-u text-putih"
+                  >Jalan, Sudirman no.4 Jawa Tengah</a
+                ></span
+              >
             </div>
             <div class="d-flex align-items-center justify-content-start mt-1">
               <i class="bi bi-telephone-inbound"></i>
-              <span class="ms-3 raleway fs-14 text-putih">Telepon :  <a href="" class="text-decoration-u text-putih"> 0857 4795 - xx87</a></span>
+              <span class="ms-3 raleway fs-14 text-putih"
+                >Telepon :
+                <a href="" class="text-decoration-u text-putih">
+                  0857 4795 - xx87</a
+                ></span
+              >
             </div>
             <div class="d-flex align-items-center justify-content-start mt-1">
               <i class="bi bi-envelope-at"></i>>
-              <span class="ms-3 raleway fs-14 text-putih">Email :  <a href="" class="text-decoration-u text-putih"> nginapin.id@gmail.com</a></span>
+              <span class="ms-3 raleway fs-14 text-putih"
+                >Email :
+                <a href="" class="text-decoration-u text-putih">
+                  nginapin.id@gmail.com</a
+                ></span
+              >
             </div>
           </div>
-           <div class="col-lg-4 col-md-6  col-12 mt-3 mt-lg-0 flex-column d-flex ">
-            <h5 class="rubik fs-20-footer fw-bold text-putih">Temukan Ruangan Di Nginapin</h5>
-              <a href="" class="text-decoration-u text-putih fs-14 ">Media sosial</a>
-              <a href="" class="text-decoration-u text-putih fs-14 mt-1">Harga dan Kamar</a>
-              <a href="" class="text-decoration-u text-putih fs-14 mt-1">Afiliasi</a>
-              <a href="" class="text-decoration-u text-putih fs-14 mt-1">Bantuan dan Dukungan</a>
+          <div class="col-lg-4 col-md-6 col-12 mt-3 mt-lg-0 flex-column d-flex">
+            <h5 class="rubik fs-20-footer fw-bold text-putih">
+              Temukan Ruangan Di Nginapin
+            </h5>
+            <a href="" class="text-decoration-u text-putih fs-14"
+              >Media sosial</a
+            >
+            <a href="" class="text-decoration-u text-putih fs-14 mt-1"
+              >Harga dan Kamar</a
+            >
+            <a href="" class="text-decoration-u text-putih fs-14 mt-1"
+              >Afiliasi</a
+            >
+            <a href="" class="text-decoration-u text-putih fs-14 mt-1"
+              >Bantuan dan Dukungan</a
+            >
           </div>
-          <div class="col-lg-4 col-md-6  col-12 flex-column  d-none d-lg-flex ">
+          <div class="col-lg-4 col-md-6 col-12 flex-column d-none d-lg-flex">
             <h5 class="rubik fs-20 fw-bold text-putih">Alamat Dan Kontak</h5>
-              <a href="" class="text-decoration-u text-putih fs-14 ">Tentang Kami</a>
-              <a href="" class="text-decoration-u text-putih fs-14 mt-1">Hubungi Kami</a>
-              <a href="" class="text-decoration-u text-putih fs-14 mt-1">Karier</a>
-              <a href="" class="text-decoration-u text-putih fs-14 mt-1">Blog</a>
-              <a href="" class="text-decoration-u text-putih fs-14 mt-1">FAQ</a>
+            <a href="" class="text-decoration-u text-putih fs-14"
+              >Tentang Kami</a
+            >
+            <a href="" class="text-decoration-u text-putih fs-14 mt-1"
+              >Hubungi Kami</a
+            >
+            <a href="" class="text-decoration-u text-putih fs-14 mt-1"
+              >Karier</a
+            >
+            <a href="" class="text-decoration-u text-putih fs-14 mt-1">Blog</a>
+            <a href="" class="text-decoration-u text-putih fs-14 mt-1">FAQ</a>
           </div>
-         
-          
         </div>
-        <hr style="height: 3px ; width: 100%; background-color: white;"/>
-        <div class="d-flex align-items-center text-center justify-content-between w-100">
+        <hr style="height: 3px; width: 100%; background-color: white" />
+        <div
+          class="d-flex align-items-center text-center justify-content-between w-100">
           <div class="d-flex align-items-center justify-content-center">
             <a href="#" class="d-flex align-items-center text-decoration-none">
-            <img src="/img/logo.png" width="60" height="60" alt="logo" />
-            <h1 class="rowdies fs-4 text-putih ms-1">
-              Ngina<span class="text-primere">Pin</span>
+              <img src="/img/logo.png" width="60" height="60" alt="logo" />
+              <h1 class="rowdies fs-4 text-putih ms-1">
+                Ngina<span class="text-primere">Pin</span>
               </h1>
             </a>
-            <h1 class="text-putih rubik fs-14 ms-3">© 2025 by, AR </h1>
+            <h1 class="text-putih rubik fs-14 ms-3">© 2025 by, AR</h1>
           </div>
-          <a class="text-putih text-decoration-u raleway fs-16"> Cookie Setting</a>
+          <a class="text-putih text-decoration-u raleway fs-16">
+            Cookie Setting</a
+          >
         </div>
       </div>
     </div>
-      <!-- footer end -->
+    <!-- footer end -->
 
     <!-- script js -->
     <script src="script.js"></script>

@@ -638,8 +638,7 @@ body {
 
 .input-auth-bar {
   border-bottom: 3px solid var(--thirdy);
-  margin-bottom: 60px;
-  margin-top: 10px;
+  margin-bottom: 40px;
   padding-bottom: 7px;
 }
 
@@ -650,6 +649,13 @@ body {
   color: var(--thirdy);
 }
 
+.input-auth-check {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: var(--thirdy);
+  border-bottom: 3px solid var(--thirdy);
+}
 .input-auth::placeholder {
   color: var(--thirdy);
 }
